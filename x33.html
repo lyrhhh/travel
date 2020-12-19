@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css"></style>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#login{
+    	background-image: url(3.jpg);
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	color: white;
+    	width: 1270px;
+    	height: 700px;
+    	text-align: center;
+    	margin: 0 auto;
+    	position: relative;
+	}
+	#title {
+    	display: inline-block;
+    	font-size: 64px;
+    	padding-top: 200px;
+    	width: 960px;
+    }
+	input{
+		border: none;
+	}
+	#inner{
+		display: none;
+	}
+	#register{
+		margin-top: 40px;
+    	display: inline-block;
+    	border: 1px solid white;
+    	width: 960px;
+    	height: 240px;
+   }
+   #massage{
+   		font-size: 1em;
+    	transform: scale(1.2, 1);
+    	color: rgb(90, 90, 90);
+   		width: 300px;
+    	height: 50px;
+    	border: none;
+   }
+   .navigation{
+   		line-height: 60px;
+   		padding-bottom: -100px;
+   }
+   .navigation ul{
+   		width: 1270px;
+   		height: 60px;
+   		list-style: none;
+		background-color: #D8BFD8;
+   }
+   .navigation ul li{
+		display:inline;
+		padding-left: 180px;
+   }
+   .navigation ul li a{
+		text-decoration: none;
+		color:white;
+		font-size: 20px;
+   }
+   .navigation ul li a:hover{
+   		color: #6495ED;
+   }
+   ul,li{
+		list-style: none;
+	}
+	.banner{
+		width: 1200px;
+		height: 397px;
+		border: 1px solid #D8BFD8;
+		margin: 40px auto;
+		position: relative;
+		overflow: hidden;
+	}
+	.slider{
+		width: 8400px;
+		position: absolute;
+		left: -1200px;
+	}
+	.slide{
+		width: 1200px;
+		overflow: hidden;
+		float: left;
+	}
+	.slide img{
+		width: 1200px;
+	}
+	.banner>span{
+		display: block;
+		width: 30px;
+		height: 50px;
+		text-align: center;
+		cursor: pointer;
+		color: #fff;
+		top: 175px;
+		line-height: 50px;
+		background:#6495ED;
+		font-size: 30px;
+		position: absolute;
+		/* display: none; */
+		opacity: 0;
+	}
+	#left{
+		left: 30px;
+	}
+	#right{
+		right: 30px;
+	}
+	.nav{
+		position: absolute;
+		left: 500px;
+		bottom: 20px;
+	}
+	.nav>li{
+		float: left;
+		width: 20px;
+		height: 20px;
+		background: #ccc;
+		cursor: pointer;
+		margin: 0 10px;
+		border-radius: 50%;
+	}
+	.nav .active{
+		background: #6495ED;
+	}
+	.travel{
+		width: 1200px;
+		height: 500px;
+		margin: 40px auto;
+	}
+	.travel a{
+		text-decoration: none;
+		color:#BC8F8F;
+	}
+	.guess a{
+		color: #aaa;
+		font-size: 10px;
+	}
+	#footer {
+    	width: 1270px;
+    	height: 200px;
+    	background-color:#E6E6FA;
+    	margin: 0 auto;
+    	color: rgb(90, 90, 90);
+    	font-size: 15px;
+    	text-align: center;
+	}
+	#footer a{
+		text-decoration: none;
+	}
+</style>
+<body>
+	<div id="login">
+        <div id="title">Hello World</div>
+        <div id="titlebottom">
+            It’s a beautiful world. Time to see it!
+        </div>
+        <div id="register">
+            <p style="font-size: 20px; margin-bottom: 20px; color:white;transform: scale(1.2, 1);padding-top: 60px;">CREATE YOUR ACCOUNT</p>
+            <div id="message">
+                <input style="width: 300px;height: 50px;border: none;" type="text" placeholder="输入你的邮箱">
+                <input style="width: 300px;height: 50px;border: none;" type="password" placeholder="请输入密码">
+                <input style="width: 120px;height: 50px;background-color: #000000;color: #ffffff;border: none;" type="submit" value="SIGN UP">
+            </div>
+        </div>
+    </div>
+    <div id="inner">
+    	<div class="navigation">
+    		<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">推荐</a></li>
+				<li><a href="#">攻略</a></li>
+				<li><a href="#">笔记</a></li>
+				<li><a href="#">美景</a></li>
+			</ul>
+    	</div>
+    	<div class="banner" id="banner">
+    		<div class="slider" id="slider">
+    			<div class="slide"><img src="3.jpg" alt=""></div>
+				<div class="slide"><img src="4.jpg" alt=""></div>
+				<div class="slide"><img src="6.jpg" alt=""></div>
+				<div class="slide"><img src="7.jpg" alt=""></div>
+				<div class="slide"><img src="8.jpg" alt=""></div>
+				<div class="slide"><img src="3.jpg" alt=""></div>
+				<div class="slide"><img src="4.jpg" alt=""></div>
+    		</div>
+			<span id="left"><</span>
+			<span id="right">></span>
+			<ul class="nav" id="nav">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+    	</div>
+    	<div class="comment">
+    		<div class="travel">
+    			<p style="font-weight:500;font-size: 30px;color: #4682B4;"><span style="font-weight: 800;">·</span>  出行攻略</p>
+    			<br>
+    			<ul style="float: left;padding-right: 600px; font-size: 20px;">
+    				<li>
+    					<a href="#">2020桂林新攻略</a>
+    				</li>
+    				<br>
+    				<li><a href="#">法国普罗旺斯旅游攻略</a></li>
+    				<br>
+    				<li><a href="#">第一次来南京，吃遍这篇就够了</a></li>
+    				<br>
+    				<li><a href="#">拍星空看极光  感受不一样的加拿大国家公园</a></li>
+    				<br>
+    				<li><a href="#">雅加达：黑灰色的“凯旋之城”</a></li>
+    				<br>
+    				<li><a href="#">香港城门郊野公园秋韵</a></li>
+    				<br>
+    				<li><a href="#">南京两天两夜暴走追枫寻秋</a></li>
+    				<br>
+    				<li><a href="#">夏木尼，小王子的玫瑰城市</a></li>
+    			</ul>
+    			<ul class="guess">
+    				<li><p style="color: #B0C4DE;">猜你想去</p></li>
+    				<br>
+    				<li><a class="area" href="#">法国</a></li>
+    				<li><a class="area" href="#">三亚</a></li>
+    				<li><a class="area" href="#">东京</a></li>
+    				<li><a class="area" href="#">巴黎</a></li>
+    				<li><a class="area" href="#">桂林</a></li>
+    				<li><a class="area" href="#">杭州</a></li>
+    				<br>
+    				<li><input class="change" style="color: #B0C4DE;background-color:#FFE4E1;" type="button" name="change" value="换一换"></li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="footer" id="footer">
+    		<div style="padding-top: 100px;">
+            	© 2014 <a href="#">xxxxxxxx.com</a>
+            	版权所有 <a href="#" >京ICP备xxxxxxxx号</a>
+            	<br>
+            	<br>
+            	<a style="font-size: 10px;" href="#">关于我们</a>-<a style="font-size: 10px;" href="#">联系我们</a>-<a style="font-size: 10px;" href="#">留言反馈</a>
+        	</div>
+    	</div>
+    </div>
+    <script type="text/javascript">
+    	var b1 = document.getElementsByTagName('input')[2];
+    	b1.onclick=function(){
+    		document.getElementById('login').style.display="none";
+    		document.getElementById('inner').style.display="block";
+    	}
+    	var box = document.getElementById('banner');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-1200*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==6){
+					slider.style.left = '-1200px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==0){
+					slider.style.left = '-6000px';
+					index = 5;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >5 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[4].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+		function getStyle(obj, attr){
+			if(obj.currentStyle){
+				return obj.currentStyle[attr];
+			} else {
+				return getComputedStyle(obj, null)[attr];
+			}
+		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				var isStop = true;
+				for(var attr in json){
+					var now = 0;
+					if(attr == 'opacity'){
+						now = parseInt(getStyle(obj,attr)*100);
+					}else{
+						now = parseInt(getStyle(obj,attr));
+					}
+					var speed = (json[attr] - now) / 8;
+					speed = speed>0?Math.ceil(speed):Math.floor(speed);
+					var cur = now + speed;
+					if(attr == 'opacity'){
+						obj.style[attr] = cur / 100;
+					}else{
+						obj.style[attr] = cur + 'px';
+					}
+					if(json[attr] !== cur){
+						isStop = false;
+					}
+				}
+				if(isStop){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+			}, 30)
+		}
+
+		function ran(){
+			var count=30; 
+			var a=new Array();
+			    for(var i=0;i<count;i++){
+			        a[i]=i;
+
+			    }
+			    a.sort(function(){
+			     return 0.5-Math.random();
+			    })			    
+			    return a;
+
+			}
+		document.getElementsByClassName('change')[0].onclick=function(){
+			var c= new Array("加拿大","温哥华","多伦多","荷兰","旧金山","马来西亚","桂林","杭州","英国","墨尔本","新疆","西藏","东京","横滨","巴黎","伦敦","纽约","芝加哥","西班牙","印度","澳大利亚","利比亚","黎巴嫩","大阪","奥克兰","吉隆坡","泰国","曼谷","维多利亚","巴西");
+			var a= ran();
+			document.getElementsByClassName('area')[0].innerHTML=c[a[0]];
+			document.getElementsByClassName('area')[1].innerHTML=c[a[1]];
+			document.getElementsByClassName('area')[2].innerHTML=c[a[2]];
+			document.getElementsByClassName('area')[3].innerHTML=c[a[3]];
+			document.getElementsByClassName('area')[4].innerHTML=c[a[4]];
+			document.getElementsByClassName('area')[5].innerHTML=c[a[5]];
+		}
+	</script>
+</body>
+</html>
